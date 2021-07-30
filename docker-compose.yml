@@ -4,8 +4,8 @@ services:
     container_name: web
     build: .
     ports:
-      - 8888:80
-    restart: "no"
+      - 80:80
+    restart: always
     env_file:
       - .env
     volumes:
